@@ -1,0 +1,6 @@
+*.pyc
+experiments
+data
+*.txt
+log_base_*
+pre_train
