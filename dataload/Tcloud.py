@@ -1,26 +1,20 @@
-import glob
-import cv2
-import random
 import numpy as np
-import pickle
 import os
-from PIL import Image
 from torch.utils import data
 from utils.imgproc import imresize
 import skimage.io as io
+import blobfile as bf
+
 class TrainDataset(data.Dataset):
 
     def __init__(self, config, isTrain=True):
         super().__init__()
         self.config = config
         if(isTrain):
-            self.datasets_dir = '/media/lscsc/nas/jialu/data/' + config.datasets_dir +'/train'
-            train_list_file = os.path.join(self.datasets_dir, 'train.txt')
-            self.imlist = np.loadtxt(train_list_file, str)
+            self.datasets_dir = '/xxxx/' + config.datasets_dir +'/train'  #change to the path of your dataset
         else:
-            self.datasets_dir = '/media/lscsc/nas/jialu/data/' + config.datasets_dir +'/test'
-            val_list_file = os.path.join(self.datasets_dir, 'test.txt')
-            self.imlist = np.loadtxt(val_list_file, str)
+            self.datasets_dir = '/xxxx/' + config.datasets_dir +'/test'
+        self.imlist = sorted(bf.listdir(self.datasets_dir+'/label'))
 
     def __getitem__(self, index):
         t = io.imread(os.path.join(self.datasets_dir, 'label', str(self.imlist[index]))).astype(np.float32)

@@ -1,10 +1,5 @@
-import glob
-import cv2
-import random
 import numpy as np
-import pickle
 import os
-from PIL import Image
 from torch.utils import data
 from utils.imgproc import imresize
 import skimage.io as io
@@ -16,13 +11,14 @@ class TrainDataset(data.Dataset):
         super().__init__()
         self.config = config
         if(isTrain):
-            self.datasets_dir = '/media/lscsc/nas/jialu/data/' + config.datasets_dir+'/train'
+            self.datasets_dir = '/xxx/' + config.datasets_dir+'/train' #change to the path of your dataset
         else:
-            self.datasets_dir = '/media/lscsc/nas/jialu/data/' + config.datasets_dir+'/test'
+            self.datasets_dir = '/xxx/' + config.datasets_dir+'/test'
 
         self.imlistl = sorted(bf.listdir(self.datasets_dir+'/label'))
 
     def __getitem__(self, index):
+        # a dataset contain 4 bands. it read the nir band and RGB band separately
         t = io.imread(os.path.join(self.datasets_dir, 'label', str(self.imlistl[index]))).astype(np.float32)
         x = io.imread(os.path.join(self.datasets_dir, 'cloud', str(self.imlistl[index]))).astype(np.float32)
         nirt = io.imread(os.path.join(self.datasets_dir, 'nir/label', str(self.imlistl[index]))).astype(np.float32)[:,:,0]

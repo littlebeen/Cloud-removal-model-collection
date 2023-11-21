@@ -6,8 +6,6 @@ def getdata(config):
         from .RICE import TrainDataset
     if(data=='T-Cloud'):
         from .Tcloud import TrainDataset
-    if(data=='Comp'):
-        from .Comp import ValDataset,TrainDataset
     if('My' in data):
         from .My import TrainDataset
     if(data=='WHU'):

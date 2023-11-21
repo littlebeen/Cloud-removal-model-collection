@@ -1,8 +1,7 @@
 
 # folder path of dataset, which includes 2 subfolders: cloudy_image/ and ground_truth/
-datasets_dir: RICE #Dataset name
-train_list: train_list.txt
-test_list: test_list.txt
+datasets_dir: RICE #Dataset name, the path of the dataset need to change in the dataload
+
 out_dir: /xxxxx   #your output dir path
 
 cuda: True

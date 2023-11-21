@@ -16,19 +16,10 @@ def init(model,config):
     if(model=='cvae'):
         from .cvae.train_cvae import train
         print('model: cvae')
-    if(model=='p2p'):
-        from .p2p.train_p2p import train
-        print('model: p2p')
     if(model=='mn'):
         from .mn.train_memory import train
         print('model: mn')
-    if(model=='spaformer'):
-        from .spaformer.train_spaformer import train
-        print('model: spaformer')
     if(model=='mdsa'):
         from .msda.train_msda import train
         print('model: mdsa')
-    if(model=='spaformercomp'):
-        from .spaformercomp.train_spaformer import train
-        print('model: spaformercomp')
     train(config)

@@ -1,10 +1,6 @@
-import glob
-import cv2
-import random
+
 import numpy as np
-import pickle
 import os
-from PIL import Image
 from torch.utils import data
 from utils.imgproc import imresize
 import skimage.io as io
@@ -16,9 +12,9 @@ class TrainDataset(data.Dataset):
         super().__init__()
         self.config = config
         if(isTrain):
-            self.datasets_dir = '/media/lscsc/nas/jialu/data/' + config.datasets_dir+'/train'
+            self.datasets_dir = '/xxx/' + config.datasets_dir+'/train'
         else:
-            self.datasets_dir = '/media/lscsc/nas/jialu/data/' + config.datasets_dir+'/test'
+            self.datasets_dir = '/xxx/' + config.datasets_dir+'/test'
 
         self.imlistl = sorted(bf.listdir(self.datasets_dir+'/label'))
 
