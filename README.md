@@ -34,7 +34,7 @@ This projects contains the code of the mdsa, cvae, amgan, spagan, memorynet for 
 **test**
 
 1. Put the pretained model in the pre_train dir and change the config
-2. python test.py
+2. python test.py (metrics include SSIM, PSNR and LPIPS)
 
 
 If you have questions, be free to contact me!
