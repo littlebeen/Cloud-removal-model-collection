@@ -52,8 +52,8 @@ if __name__ == '__main__':
     
     gen=gen.cuda()
 
-    input = torch.randn(2, 3, 256, 256).cuda()
-    all_time=[]
+    # input = torch.randn(2, 3, 256, 256).cuda()
+    # all_time=[]
     # code to show the Computational complexity (speed, parameters,memory,complexity(GFLOPs))
     # for _ in range(100):
     #     time_start = time.time()
