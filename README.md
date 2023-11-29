@@ -1,7 +1,7 @@
 # Cloud-removal-model-collection
 A collection of the existing end-to-end cloud removal models
 
-This projects contains the code of the mdsa, cvae, amgan, spagan, memorynet for cloud removal and the dataloader of RICE, WHU, T-Cloud and a dataset create by ourselves (file in dataload named My.py). The paper of the models and download link of the datasets are list as follow.
+This project includes the code for the MDSA, CVAE, AMGAN, SPAGAN, and MemoryNet models designed for cloud removal. Additionally, it incorporates the data loaders for RICE, WHU, T-Cloud, and a custom dataset (located in the 'dataloader' directory under the file named 'My.py'). The respective papers for these models and the download links for the datasets are provided below.
 
 **datasets**
 
