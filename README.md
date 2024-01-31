@@ -1,7 +1,7 @@
 # Cloud-removal-model-collection
 A collection of the existing end-to-end cloud removal models
 
-This project includes the code for the MDSA, CVAE, AMGAN, SPAGAN, and MemoryNet models designed for cloud removal. Additionally, it incorporates the data loaders for RICE, WHU, T-Cloud, and a custom dataset (located in the 'dataloader' directory under the file named 'My.py'). The respective papers for these models and the download links for the datasets are provided below.
+This project includes the code for the MDSA, CVAE, AMGAN, SPAGAN, and MemoryNet models designed for cloud removal. Additionally, it incorporates the data loaders for RICE, WHU, T-Cloud, and a custom dataset named CUHK-CR (located in the 'dataloader' directory under the file named 'My.py'). The respective papers for these models and the download links for the datasets are provided below.
 
 **datasets**
 
@@ -10,6 +10,8 @@ This project includes the code for the MDSA, CVAE, AMGAN, SPAGAN, and MemoryNet 
 * T-Cloud [paper](https://openaccess.thecvf.com/content/ACCV2022/papers/Ding_Uncertainty-Based_Thin_Cloud_Removal_Network_via_Conditional_Variational_Autoencoders_ACCV_2022_paper.pdf) [download link](https://pan.baidu.com/s/1LtkcdxMbJQTgEr-JvTM1Ug) pick up code:t63d
 
 * WHU [download link](http://gpcv.whu.edu.cn/data/WHU_Cloud_Dataset.html)
+
+* CUHK-CR [paper](https://arxiv.org/abs/2401.15105) [download link](https://github.com/littlebeen/Diffusion-Enhancement-for-CR/tree/main)
 
 **models**
 
@@ -25,16 +27,16 @@ This project includes the code for the MDSA, CVAE, AMGAN, SPAGAN, and MemoryNet 
 
  # Usage
 
-**train**
+**Train**
 
 1. Add your output dir path in the config and choose the model you need (mn, mdsa, cvae, spagan, amgan)
 2. Change the dataset path in the dataload/xx.py
 3. python train.py
 
-**test**
+**Test**
 
 1. Put the pretained model in the pre_train dir and change the config
 2. python test.py (metrics include SSIM, PSNR and LPIPS)
 
 
-If you have questions, be free to contact me!
+If you have any questions, be free to contact me!
