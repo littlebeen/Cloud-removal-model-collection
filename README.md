@@ -38,5 +38,17 @@ This project includes the code for the MDSA, CVAE, AMGAN, SPAGAN, and MemoryNet 
 1. Put the pretained model in the pre_train dir and change the config
 2. python test.py (metrics include SSIM, PSNR and LPIPS)
 
+# Cite
+
+If this project is useful to to you, please cite the paper:)
+
+```
+@article{sui2024diffusion,
+  title={Diffusion Enhancement for Cloud Removal in Ultra-Resolution Remote Sensing Imagery},
+  author={Sui, Jialu and Ma, Yiyang and Yang, Wenhan and Zhang, Xiaokang and Pun, Man-On and Liu, Jiaying},
+  journal={arXiv preprint arXiv:2401.15105},
+  year={2024}
+}
+```
 
 If you have any questions, be free to contact me!
