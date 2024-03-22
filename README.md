@@ -40,7 +40,7 @@ This project includes the code for the MDSA, CVAE, AMGAN, SPAGAN, and MemoryNet 
 
 # Cite
 
-If this project is useful to to you, please cite the paper:)
+If this project is useful to you, please cite thid paper :)
 
 ```
 @article{sui2024diffusion,
