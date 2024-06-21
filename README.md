@@ -46,11 +46,13 @@ If this project is useful to you, please cite this paper :)
 
 ```
 @article{sui2024diffusion,
-  title={Diffusion Enhancement for Cloud Removal in Ultra-Resolution Remote Sensing Imagery},
   author={Sui, Jialu and Ma, Yiyang and Yang, Wenhan and Zhang, Xiaokang and Pun, Man-On and Liu, Jiaying},
-  journal={arXiv preprint arXiv:2401.15105},
-  year={2024}
-}
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Diffusion Enhancement for Cloud Removal in Ultra-Resolution Remote Sensing Imagery}, 
+  year={2024},
+  volume={62},
+  pages={1-14},
+  doi={10.1109/TGRS.2024.3411671}}
 ```
 
 If you have any questions, be free to contact me!
