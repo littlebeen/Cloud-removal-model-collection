@@ -56,13 +56,13 @@ def test(config, test_data_loader, gen, criterionMSE, epoch):
         att, out = gen(x)
         if epoch % config.snapshot_interval == 0 and epoch > 20 and filename[0] in get_image_arr(config.datasets_dir):
             if(x.shape[1]==3):
-                save_image(config.out_dir, x, i, epoch, filename=filename[0]+'LR')
-                save_image(config.out_dir, t, i, epoch, filename=filename[0]+'HR')
-                save_image(config.out_dir, out, i, epoch, filename=filename[0]+'SR')
+                save_image(config.out_dir, x, i, epoch, filename=filename[0]+'Cloudy')
+                save_image(config.out_dir, t, i, epoch, filename=filename[0]+'GT')
+                save_image(config.out_dir, out, i, epoch, filename=filename[0]+'CR')
             else:  #it handle the multispectral nir layer (the situation that image contain 4 band RGB and nir)
-                save_imagenir(config.out_dir, x, i, epoch, filename=filename[0]+'LR')
-                save_imagenir(config.out_dir, t, i, epoch, filename=filename[0]+'HR')
-                save_imagenir(config.out_dir, out, i, epoch, filename=filename[0]+'SR')
+                save_imagenir(config.out_dir, x, i, epoch, filename=filename[0]+'Cloudy')
+                save_imagenir(config.out_dir, t, i, epoch, filename=filename[0]+'GT')
+                save_imagenir(config.out_dir, out, i, epoch, filename=filename[0]+'CR')
 
         imgA = (out[0]*255).clamp(0, 255).to(torch.uint8)
         imgB = (t[0]*255).clamp(0, 255).to(torch.uint8)
