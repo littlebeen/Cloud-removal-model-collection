@@ -3,7 +3,7 @@ A collection of the existing end-to-end cloud removal models
 
 This project includes the code for the MDSA, CVAE, AMGAN, SPAGAN, and MemoryNet models designed for cloud removal. Additionally, it incorporates the data loaders for RICE, WHU, T-Cloud, and a custom dataset named CUHK-CR (located in the 'dataloader' directory under the file named 'My.py'). The respective papers for these models and the download links for the datasets are provided below.
 
-🔥 Congradualation to my collaborators and myself! This paper has been accepted by IEEE Transactions on Geoscience and Remote Sensing! It's a new start! The code for [Diffusion Enhancement for Cloud Removal in Ultra-Resolution Remote Sensing Imagery](https://arxiv.org/abs/2401.15105) could be found at [https://github.com/littlebeen/DDPM-Enhancement-for-Cloud-Removal](https://github.com/littlebeen/DDPM-Enhancement-for-Cloud-Removal)
+🔥 Congradualation to my collaborators and myself! This paper has been accepted by IEEE Transactions on Geoscience and Remote Sensing! It's a new start! The code for [Diffusion Enhancement for Cloud Removal in Ultra-Resolution Remote Sensing Imagery](https://ieeexplore.ieee.org/abstract/document/10552304/) could be found at [https://github.com/littlebeen/DDPM-Enhancement-for-Cloud-Removal](https://github.com/littlebeen/DDPM-Enhancement-for-Cloud-Removal)
 
 **datasets**
 
