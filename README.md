@@ -13,7 +13,7 @@ This project includes the code for the MDSA, CVAE, AMGAN, SPAGAN, and MemoryNet 
 
 * WHU [download link](http://gpcv.whu.edu.cn/data/WHU_Cloud_Dataset.html)
 
-* CUHK-CR [paper](https://arxiv.org/abs/2401.15105) [download link](https://github.com/littlebeen/Diffusion-Enhancement-for-CR/tree/main)
+* CUHK-CR [paper](https://ieeexplore.ieee.org/abstract/document/10552304/) [download link](https://github.com/littlebeen/Diffusion-Enhancement-for-CR/tree/main)
 
 **models**
 
